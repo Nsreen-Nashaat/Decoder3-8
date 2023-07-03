@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 07/03/2023 06:43:25 PM
+// Create Date: 07/03/2023 07:14:03 PM
 // Design Name: 
 // Module Name: decoder3_8
 // Project Name: 
@@ -20,21 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module decoder3_8
-#(parameter n=3)
-(
-    input [n-1:0] w,
-    input en,
-    output reg [0:2**n -1] y
-  );
-  
-  always @(*)
-    begin
-      y = 'b0;
-      if(en)
-        y[w] = 1'b1;
-      else
-        y = 'b0;
-    end  
-  
+module decoder3_8(
+
+    );
 endmodule
